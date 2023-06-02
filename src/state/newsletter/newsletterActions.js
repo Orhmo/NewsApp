@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
 
-export const subscribeToNewsletter = createAction('news/subscribeToNewsletter', (email) => ({
-  payload: email,
+export const subscribeToNewsletter = createAction('newsletter/subscribeToNewsletter', (fullName, email) => ({
+  payload: { fullName, email },
 }));
