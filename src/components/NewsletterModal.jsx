@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { IoCloseOutline } from 'react-icons/io5';
-import { subscribeToNewsletter } from '../../state/newsletter/newsletterActions';
+import { subscribeToNewsletter } from '../state/newsletter/newsletterActions';
 
 function NewsLetterModal({ handleModal, nextModal }) {
   const dispatch = useDispatch();
