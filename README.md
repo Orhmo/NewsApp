@@ -12,7 +12,7 @@ The website has a home page which showaces the top and trending news.
 ##NEWSPAGE
 The news page displays a list of all news articles. Showing their title, description, author, published date and time. All displayed a maximum of 10 per page and paginated
 
-## CATEGORYPAGE
+## CATEGORY PAGE
 The Category page displays a list of all news articles by source which can be filtered to a specific category source using the filter dropdown.
 
 ## OTHER FEATURES
