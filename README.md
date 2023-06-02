@@ -3,6 +3,14 @@
 This News website was fully designed and implement by me under 36 hours.
 {Company name and logo included}
 
+## To View
+Due to linimation isues from the api site, You can only view the generated api information on local host and not on the netlify link.
+As it would show an Error-406 (Requests from the browser are not allowed on the Developer plan, except from localhost.)  on your network tab.
+To fully view the full website fuctionality. Follow the steps
+- Clone the repo to your local system
+- Run "npm install", you install dependencies
+- Run "npm run dev" 
+
 ## API
 The API used to generate the website information for the website was gotten <a href="newsapi.org">NewsAPI</a>.
 
