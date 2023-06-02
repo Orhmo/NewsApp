@@ -8,6 +8,10 @@ The API used to generate the website information for the website was gotten <a h
 
 ## HOMEPAGE
 The website has a home page which showaces the top and trending news.
+- The hero section displayes a filted group of news in a slide and trending news in a list format
+- The news shows a paginated (by 9) list of 36 news genearted from the api. For additional news the view all button can be clicked
+- The recommended section displays a list of shuffled recommended news from the trebding news api
+- The newsletter section is functional and generates a completed modal on click of the subscribe button
 
 ## NEWSPAGE
 The news page displays a list of all news articles. Showing their title, description, author, published date and time. All displayed a maximum of 10 per page and paginated
