@@ -1,14 +1,22 @@
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { IoCloseOutline } from 'react-icons/io5';
 import { subscribeToNewsletter } from '../state/newsletter/newsletterActions';
 
 function NewsLetterModal({ handleModal, nextModal }) {
   const dispatch = useDispatch();
+  const [email, setEmail] = useState('');
+  const [fullName, setFullName] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleFullNameChange = (e) => {
+    setFullName(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const fullName = e.target.fullname.value;
-    const email = e.target.email.value;
     dispatch(subscribeToNewsletter({ fullName, email }));
     nextModal();
   };
@@ -32,6 +40,8 @@ function NewsLetterModal({ handleModal, nextModal }) {
           name='fullname'
           id=''
           placeholder='Full name'
+          value={fullName}
+          onChange={handleFullNameChange}
         />
         <input
           className='input_field px-3 py-2 my-1 border rounded-md'
@@ -39,6 +49,8 @@ function NewsLetterModal({ handleModal, nextModal }) {
           name='email'
           id=''
           placeholder='Email address'
+          value={email}
+          onChange={handleEmailChange}
         />
         <button label='subscribe now' onClick={handleSubmit}>
           {' '}

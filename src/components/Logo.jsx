@@ -11,7 +11,7 @@ export default function Logo() {
   return (
     <div className='justify-between '>
       <nav
-        className={`fixed top-6 lg:top-12 left-0 z-10 flex w-full lg:items-center lg:justify-center justify-between  py-4 px-4 lg:px-10 bg-red-950 z-1 ${
+        className={`fixed top-6 lg:top-12 left-0 z-10 flex w-full lg:items-center lg:justify-center justify-between py-6 lg:py-4 px-4 lg:px-10 bg-red-950 z-1 ${
           isScrolled
             ? 'bg-white after:bg-opacity-100 backdrop-blur-md'
             : 'bg-primary-100 text-black'

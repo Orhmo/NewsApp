@@ -32,7 +32,7 @@ export default function CategoriesSection() {
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const [newsPerPage] = useState(6);
+  const [newsPerPage] = useState(12);
 
   // Calculate slice indexes
   const indexOfLastNews = currentPage * newsPerPage;
