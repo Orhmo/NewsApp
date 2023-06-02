@@ -7,7 +7,7 @@ export const fetchRandomNews = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        'https://newsapi.org/v2/everything?q=all&apiKey=bd2a5b59b04942898a487f046e580296'
+        'https://newsapi.org/v2/everything?q=all&apiKey=a71f53100ce84cbc8fb5fa4718ca2761'
       );
       return response.data.articles;
     } catch (error) {
@@ -22,7 +22,7 @@ export const fetchNewsBySource = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        'https://newsapi.org/v2/top-headlines/sources?apiKey=bd2a5b59b04942898a487f046e580296'
+        'https://newsapi.org/v2/top-headlines/sources?apiKey=a71f53100ce84cbc8fb5fa4718ca2761'
       );
 
       const categories = Array.from(
@@ -45,7 +45,7 @@ export const fetchTrendingNews = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        'https://newsapi.org/v2/top-headlines?country=ng&apiKey=bd2a5b59b04942898a487f046e580296'
+        'https://newsapi.org/v2/top-headlines?country=ng&apiKey=a71f53100ce84cbc8fb5fa4718ca2761'
       );
       return response.data.articles;
     } catch (error) {
