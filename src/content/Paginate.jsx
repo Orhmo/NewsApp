@@ -14,7 +14,7 @@ const Paginate = ({ totalPages, currentPage, onPageChange }) => {
 
   return (
     <nav className='paginate'>
-      <ul className='flex'>
+      <ul className='flex flex-wrap justify-center'>
         {/* Previous Page */}
         <li className='page-item'>
           <button

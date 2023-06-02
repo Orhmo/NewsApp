@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { SUB_LINKS } from '../utils/data';
 import { format } from 'date-fns';
 
 import {

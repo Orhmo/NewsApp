@@ -40,7 +40,7 @@ export default function NavBar() {
                   ? 'text-black hover:text-white '
                   : 'text-white hover:text-black '
               } ${pathname === to ? 'font-bold text-secondary' : ''}`}
-              activeClassName='border-b-2 border-secondary-200 text-secondary'
+              activeclassname='border-b-2 border-secondary-200 text-secondary'
             >
               {link}
             </NavLink>

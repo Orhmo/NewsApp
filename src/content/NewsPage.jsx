@@ -7,7 +7,7 @@ export default function NewsPage() {
   const dispatch = useDispatch();
   const randomNews = useSelector((state) => state.news.randomNews);
   const { id } = useParams();
-  const news = randomNews.find((news) => news.source.id.toString() === id);
+  const news = randomNews.find((news) => news.source.id === id);
 
   useEffect(() => {
     dispatch(fetchRandomNews());
@@ -22,12 +22,13 @@ export default function NewsPage() {
               <div className=' flex justify-center items-center'>
                 <img src={news.urlToImage} />
               </div>
-              <div className='flex flex-col items-start'>
+              <div className='flex flex-col items-start mt-2'>
                 <p className='text-base font-medium font-space'>
                   {news.author}
                 </p>
-                <p className='text-xs text-secondary-200 font-inter'>
-                  {new Date(news.publishedAt).toLocaleDateString()} at
+                <p className='text-xs text-secondary-200 font-inter '>
+                  {new Date(news.publishedAt).toLocaleDateString()} at{' '}
+                  {new Date(news.publishedAt).toLocaleTimeString()}
                 </p>
               </div>
             </div>
@@ -50,7 +51,12 @@ export default function NewsPage() {
           <div className='pt-10'>
             <p>{news.content}</p>
             <p>
-              Read more: <Link to={news.url}>{news.url}</Link>
+              Read more:{' '}
+              <Link to={news.url}>
+                <span className='underline text-blue-500 hover:text-blue-700'>
+                  {news.url}
+                </span>
+              </Link>
             </p>
           </div>
         </div>

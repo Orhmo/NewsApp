@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { map } from 'react-refresh/runtime';
 
 const HeroSection = () => {
   const dispatch = useDispatch();
@@ -64,15 +65,11 @@ const HeroSection = () => {
 
       <div className='flex flex-row md:flex-col '>
         {/* Random News Slider */}
-        <div className='random-news-slider absolute top-44 md:top-1/2 md:left-4 transform -translate-y-1/2 p-4 shadow  w-[60vw] md:w-1/3'>
+        <div className='random-news-slider absolute top-40 sm:top-44 md:top-1/2 md:left-6 transform -translate-y-1/2 p-4 shadow w-[80vw] sm:w-[60vw] md:w-1/3'>
           {renderedRandomNews.length > 0 ? (
             <Slider {...settings}>
               {renderedRandomNews.map((news) => (
-                <Link
-                  to={`/news/${news.source.id}`}
-                  className='flex flex-col'
-                  key={news.source.id}
-                >
+                <Link to={`/news/${news.source.id}`} className='flex flex-col'>
                   <div className='news-item mb-4 bg-red-950 bg-opacity-50 p-4'>
                     <h3 className='text-xl font-bold mb-2 text-white'>
                       {news.title}
@@ -92,16 +89,12 @@ const HeroSection = () => {
         </div>
 
         {/* Trending News Box */}
-        <div className='trending-news-box absolute top-80 md:top-40 right-4 bg-black opacity-70 p-4 rounded-md text-white w-[75vw] md:w-1/5 '>
+        <div className='trending-news-box absolute top-64 sm:top-72 md:top-40 right-4 bg-black opacity-70 p-4 rounded-md text-white w-[82vw] sm:w-[75vw] md:w-1/5 '>
           <h4 className='text-lg font-bold mb-4 uppercase'>Trending News</h4>
           <ul>
             {renderedTrendingNews.length > 0 ? (
               renderedTrendingNews.map((news) => (
-                <Link
-                  to={`/news/${news.source.id}`}
-                  className='flex flex-col'
-                  key={news.source.id}
-                >
+                <Link to={`/news/${news.source.id}`} className='flex flex-col'>
                   <li className='flex flex-col mb-2'>
                     <span className='text-yellow-500 mr-2 text-sm'>•</span>
                     {news.title}

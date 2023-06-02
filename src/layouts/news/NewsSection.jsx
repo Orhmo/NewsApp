@@ -14,7 +14,7 @@ export default function NewsSection() {
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const [newsPerPage] = useState(6);
+  const [newsPerPage] = useState(10);
 
   // Calculate slice indexes
   const indexOfLastNews = currentPage * newsPerPage;
@@ -46,15 +46,15 @@ export default function NewsSection() {
                 />
               </div>
 
-              <div className='border-1 rounded-tr-3xl rounded-br-3xl shadow-2xl w-full py-auto'>
+              <div className='border-1 rounded-tr-3xl rounded-br-3xl shadow-2xl w-full py-auto px-2'>
                 {/*Content*/}
                 <div className='p-4 flex flex-col h-full'>
                   <div className='flex flex-col '>
-                    <div className='text-lg  font-bold mb-4'>{news.title}</div>
-                    <div className='text-base text-gray-900'>
+                    <div className='text-xl  font-bold mb-4'>{news.title}</div>
+                    <div className='text-lg text-gray-900'>
                       {news.description}
                     </div>
-                    <div className='pt-2 text-xs text-gray-400'>
+                    <div className='pt-8 text-base text-gray-400'>
                       {news.author}
                     </div>
                     <div className='text-md font-bold text-red-950'>

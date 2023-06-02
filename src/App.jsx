@@ -1,4 +1,4 @@
-import './Index.css';
+import './index.css';
 import React, { useState } from 'react';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Logo from './components/Logo';
 import News from './pages/News';
 import NewsPage from './content/NewsPage';
+import Categories from './layouts/categories/CategoriesSection';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Home />} />
             <Route path='/news' exact element={<News />} />
+            <Route path='/categories' exact element={<Categories />} />
             <Route path='/news/:id' element={<NewsPage />} />
           </Routes>
         </div>

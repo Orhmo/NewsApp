@@ -1,5 +1,6 @@
 import { shuffle } from 'lodash';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import Paginate from '../../content/Paginate';
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -66,7 +67,7 @@ export default function PostSection() {
             <Link
               to={`/news/${news.source.id}`}
               className='flex flex-col'
-              key={news.source.id}
+              key={uuidv4()}
             >
               <div className='mx-auto justify-center'>
                 {/*News Image*/}
