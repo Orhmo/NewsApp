@@ -16,13 +16,17 @@ export default function NewsSection() {
   const [currentPage, setCurrentPage] = useState(1);
   const [newsPerPage] = useState(6);
 
-  // Currently shown news
+  // Calculate slice indexes
   const indexOfLastNews = currentPage * newsPerPage;
   const indexOfFirstNews = indexOfLastNews - newsPerPage;
   const currentNews = randomNews.slice(indexOfFirstNews, indexOfLastNews);
 
   const totalPages = Math.ceil(randomNews.length / newsPerPage);
 
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
   return (
     <section className='flex flex-col'>
       <div className=' gap-x-10 gap-y-10 items-center m-10 '>
@@ -69,7 +73,7 @@ export default function NewsSection() {
         <Paginate
           totalPages={totalPages}
           currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
+          onPageChange={handlePageChange}
         />
       </div>
     </section>

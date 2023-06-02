@@ -1,54 +1,54 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../index.css';
 
-const Paginate = ({ totalPages, currentPage, setCurrentPage }) => {
-  {
-    /*Navigation*/
-  }
-  const pageNumbers = [...Array(totalPages + 1).keys()].slice(1);
+const Paginate = ({ totalPages, currentPage, onPageChange }) => {
+  // Generate an array of page numbers
+  const pageNumbers = Array.from(
+    { length: totalPages },
+    (_, index) => index + 1
+  );
 
-  const nextPage = () => {
-    if (currentPage !== totalPages) setCurrentPage(currentPage + 1);
-  };
-  const prevPage = () => {
-    if (currentPage !== 1) setCurrentPage(currentPage - 1);
+  const handlePageClick = (pageNumber) => {
+    onPageChange(pageNumber);
   };
 
   return (
     <nav className='paginate'>
       <ul className='flex'>
-        {/*Previous Page*/}
+        {/* Previous Page */}
         <li className='page-item'>
           <button
             disabled={currentPage === 1}
             className='border-2 rounded-md px-4 py-2 text-red-950 hover:bg-red-950 hover:text-white'
-            onClick={prevPage}
+            onClick={() => handlePageClick(currentPage - 1)}
           >
-            First
+            Previous
           </button>
         </li>
-        {/*News Page*/}
-        {pageNumbers.map((pgNumber) => (
+
+        {/* Page Numbers */}
+        {pageNumbers.map((pageNumber) => (
           <li
-            key={pgNumber}
+            key={pageNumber}
             className={`text-red-950 focus:text-white ${
-              currentPage == pgNumber ? 'active' : ''
+              currentPage === pageNumber ? 'active' : ''
             } page-item`}
           >
             <button
-              onClick={() => setCurrentPage(pgNumber)}
+              onClick={() => handlePageClick(pageNumber)}
               className='border-2 rounded-md px-4 py-2 hover:bg-red-950 hover:text-white'
             >
-              {pgNumber}
+              {pageNumber}
             </button>
           </li>
         ))}
-        {/*Next Page*/}
+
+        {/* Next Page */}
         <li className='page-item'>
           <button
-            disabled={currentPage === 3}
+            disabled={currentPage === totalPages}
             className='border-2 rounded-md px-4 py-2 text-red-950 hover:bg-red-950 hover:text-white'
-            onClick={nextPage}
+            onClick={() => handlePageClick(currentPage + 1)}
           >
             Next
           </button>

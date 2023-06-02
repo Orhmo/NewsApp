@@ -13,8 +13,6 @@ export default function NewsPage() {
     dispatch(fetchRandomNews());
   }, [dispatch]);
 
-  // Pagination
-
   return (
     <div className='flex flex-col relative'>
       <div className='bg-primary-100 w-full flex justify-center px-4 pt-0 pb-16 md:pt-10 md:pb-16 lg:pt-20 lg:pb-24'>
@@ -51,7 +49,9 @@ export default function NewsPage() {
           </h1>
           <div className='pt-10'>
             <p>{news.content}</p>
-            <p>Read more : {news.url}</p>
+            <p>
+              Read more: <Link to={news.url}>{news.url}</Link>
+            </p>
           </div>
         </div>
       </div>

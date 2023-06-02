@@ -39,6 +39,10 @@ export default function PostSection() {
 
   const totalPages = Math.ceil(renderedRandomNews.length / newsPerPage);
 
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
   return (
     <section className='Post'>
       <div className='m-0 p-8 mt-16 '>
@@ -92,7 +96,7 @@ export default function PostSection() {
             <Paginate
               totalPages={totalPages}
               currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
+              onPageChange={handlePageChange}
             />
           </div>
         </div>
