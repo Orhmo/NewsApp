@@ -1,6 +1,8 @@
 # NewsApp
 
-This News website was fully designed by me .
+This News website was fully designed by me.
+{Company name and logo included}
+
 The API used to generate the website information for the website was gotten <a href="newsapi.org">NewsAPI</a>.
 
 The website has a home page which showages the top and trending news.
