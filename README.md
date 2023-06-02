@@ -9,7 +9,7 @@ The API used to generate the website information for the website was gotten <a h
 ## HOMEPAGE
 The website has a home page which showaces the top and trending news.
 
-##NEWSPAGE
+## NEWSPAGE
 The news page displays a list of all news articles. Showing their title, description, author, published date and time. All displayed a maximum of 10 per page and paginated
 
 ## CATEGORY PAGE
