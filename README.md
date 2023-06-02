@@ -1,6 +1,6 @@
 # NewsApp
 
-This News website was fully designed by me.
+This News website was fully designed and implement by me under 36 hours.
 {Company name and logo included}
 
 ## API
