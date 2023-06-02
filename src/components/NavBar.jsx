@@ -21,7 +21,7 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`fixed top-24 left-0 z-10 hidden lg:flex w-full items-center justify-center py-4 lg:py-2 px-4 lg:px-10 bg-red-950 border-white ${
+        className={`fixed top-28 left-0 z-10 hidden lg:flex w-full items-center justify-center py-4 lg:py-2 px-4 lg:px-10 bg-red-950 border-white ${
           isScrolled
             ? 'bg-transparent after:bg-opacity-100 backdrop-blur-md'
             : 'bg-primary-100'

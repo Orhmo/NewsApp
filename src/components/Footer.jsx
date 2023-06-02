@@ -11,17 +11,18 @@ export default function Footer() {
         <section className=' pt-10'>
           <div className=' text-md-start mt-5 '>
             <div className='mt-3 mx-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8'>
-              <div className='space-y-2 mx-auto mb-4'>
+              <div className='space-y-6 mx-auto mb-4'>
                 <Link
                   to='/'
                   className='align-center flex items-center justify-center pt-2'
                 >
-                  <CompanyLogo />
+                  <p className='text-5xl eading-8 style text-white no-underline'>
+                    theIssue
+                  </p>
                 </Link>
-                <p className='text-gray-200 mt-4 mx-4'>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                <p className='text-gray-200 my-4 mx-4'>
+                  "Unveiling Truth, Empowering Minds: Your Gateway to Informed
+                  Perspectives"
                 </p>
               </div>
 
