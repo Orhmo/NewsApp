@@ -9,9 +9,9 @@ The API used to generate the website information for the website was gotten <a h
 
 ## NAVBAR
 This split into three section
--The first section show the realtime weaher temperature in Lagos state and real time date.
--The second section shows the company logo
--The third section shows the navigation bar that can be used to navigate through the site.
+- The first section show the realtime weaher temperature in Lagos state and real time date.
+- The second section shows the company logo
+- The third section shows the navigation bar that can be used to navigate through the site.
 
 ## HOMEPAGE
 The website has a home page which showaces the top and trending news.
