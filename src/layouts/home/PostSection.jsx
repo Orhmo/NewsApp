@@ -41,7 +41,7 @@ export default function PostSection() {
 
   return (
     <section className='Post'>
-      <div className='m-0 p-8 mt-16 bg-white'>
+      <div className='m-0 p-8 mt-16 '>
         <div className='flex justify-between mb-8'>
           <h1 className='capitalize text-black text-lg md:text-2xl font-bold'>
             {' '}
@@ -55,7 +55,7 @@ export default function PostSection() {
           </Link>
         </div>
 
-        {/*Post List*/}
+        {/*News List*/}
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10 items-center my-10'>
           {currentNews.map((news) => (
@@ -65,7 +65,7 @@ export default function PostSection() {
               key={news.source.id}
             >
               <div className='mx-auto justify-center'>
-                {/*Post Image*/}
+                {/*News Image*/}
                 <div className='w-full cursor-pointer box duration-200 hover:scale-90 rounded-tl-3xl rounded-tr-3xl justify-center'>
                   <img
                     src={news.urlToImage}
@@ -87,8 +87,8 @@ export default function PostSection() {
               </div>
             </Link>
           ))}
-          {/*Post Navigation*/}
-          <div className='justify-center md:px-[500px]'>
+          {/*News Navigation*/}
+          <div className='mx-auto px-auto mb-10'>
             <Paginate
               totalPages={totalPages}
               currentPage={currentPage}

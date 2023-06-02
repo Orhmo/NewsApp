@@ -11,28 +11,28 @@ export default function Footer() {
         <section className=' pt-10'>
           <div className=' text-md-start mt-5 '>
             <div className='mt-3 mx-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8'>
-              <div md='3' lg='4' xl='3' className='mx-auto mb-4'>
+              <div className='space-y-2 mx-auto mb-4'>
                 <Link
                   to='/'
                   className='align-center flex items-center justify-center pt-2'
                 >
                   <CompanyLogo />
                 </Link>
-                <p className='text-gray-700 mt-4 mx-4'>
+                <p className='text-gray-200 mt-4 mx-4'>
                   Here you can use rows and columns to organize your footer
                   content. Lorem ipsum dolor sit amet, consectetur adipisicing
                   elit.
                 </p>
               </div>
 
-              <div className=' mb-4 capitalise'>
+              <div className='space-y-2 mb-4 capitalise'>
                 <h6 className=' font-bold mb-4 text-gray-400 inline-block'>
                   Categories
                 </h6>
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     International
                   </a>
@@ -40,7 +40,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Regional
                   </a>
@@ -48,7 +48,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Political
                   </a>
@@ -56,7 +56,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Business
                   </a>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Sport
                   </a>
@@ -72,21 +72,21 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Health
                   </a>
                 </p>
               </div>
 
-              <div className=' mb-4 capitalise'>
+              <div className='space-y-2 mb-4 capitalise'>
                 <h6 className='font-bold mb-4 text-gray-400 inline-block'>
                   Company
                 </h6>
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     About Us
                   </a>
@@ -94,7 +94,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Careers
                   </a>
@@ -102,7 +102,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Privacy Policy
                   </a>
@@ -110,7 +110,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Terms of Services{' '}
                   </a>
@@ -118,33 +118,33 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Contact us
                   </a>
                 </p>
               </div>
 
-              <div className=' mb-md-0 mb-4 capitalise'>
+              <div className='space-y-2 mb-md-0 mb-4 capitalise'>
                 <h6 className='font-bold mb-4 text-gray-400 inline-block'>
                   Contact
                 </h6>
-                <p className='text-gray-900 leading-5'>
-                  New York, NY 10012, US
+                <p className='text-gray-200 leading-5'>
+                  The Issue, Lagos state, NG
                 </p>
-                <p className='text-gray-700'>info@example.com</p>
-                <p className='text-gray-700'>+ 01 234 567 88</p>
-                <p className='text-gray-700'>+ 01 234 567 89</p>
+                <p className='text-gray-200'>news@theissue.com</p>
+                <p className='text-gray-200'>+ 234 714 345 8792</p>
+                <p className='text-gray-200'>+ 234 816 285 1298</p>
               </div>
 
-              <div className=' mb-4 capitalise'>
+              <div className='space-y-2 mb-4 capitalise'>
                 <h6 className='font-bold mb-4 text-gray-400 inline-block'>
                   Socials
                 </h6>
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Facebook
                   </a>
@@ -152,7 +152,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Twitter
                   </a>
@@ -160,7 +160,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     Intagram
                   </a>
@@ -168,7 +168,7 @@ export default function Footer() {
                 <p>
                   <a
                     href='#!'
-                    className='flex text-gray-700 hover:text-gray-400 transition'
+                    className='flex text-gray-200 hover:text-gray-400 transition'
                   >
                     LinkedIn
                   </a>
@@ -179,7 +179,7 @@ export default function Footer() {
         </section>
 
         <div
-          className='text-center p-4'
+          className='text-center p-4 text-gray-200'
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
         >
           © 2023 Copyright:

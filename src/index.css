@@ -5,11 +5,13 @@
 /* ==================CONTENT================= */
 .content {
   padding-top: 92px;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
   .content {
     padding-top: 160px;
+    overflow: hidden;
   }
 }
 

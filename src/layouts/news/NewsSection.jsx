@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Paginate from '../../content/Paginate';
-import {
-  fetchRandomNews,
-  fetchTrendingNews,
-} from '../../state/news/newsActions';
+import { fetchRandomNews } from '../../state/news/newsActions';
 import { Link } from 'react-router-dom';
 
 export default function NewsSection() {
@@ -27,7 +24,7 @@ export default function NewsSection() {
   const totalPages = Math.ceil(randomNews.length / newsPerPage);
 
   return (
-    <section className='top-96'>
+    <section className='flex flex-col'>
       <div className=' gap-x-10 gap-y-10 items-center m-10 '>
         {currentNews.map((news) => (
           <Link
@@ -49,11 +46,13 @@ export default function NewsSection() {
                 {/*Content*/}
                 <div className='p-4 flex flex-col h-full'>
                   <div className='flex flex-col '>
-                    <div className='text-sm font-bold mb-4'>{news.title}</div>
+                    <div className='text-lg  font-bold mb-4'>{news.title}</div>
                     <div className='text-base text-gray-900'>
                       {news.description}
                     </div>
-                    <div className='text-xs text-gray-400'>{news.author}</div>
+                    <div className='pt-2 text-xs text-gray-400'>
+                      {news.author}
+                    </div>
                     <div className='text-md font-bold text-red-950'>
                       {new Date(news.publishedAt).toLocaleDateString()}
                     </div>
@@ -66,7 +65,7 @@ export default function NewsSection() {
       </div>
 
       {/*Post Navigation*/}
-      <div className='justify-center md:px-[350px] mb-10'>
+      <div className='mx-auto px-auto mb-10'>
         <Paginate
           totalPages={totalPages}
           currentPage={currentPage}

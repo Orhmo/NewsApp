@@ -45,11 +45,11 @@ const HeroSection = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 50,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 5000,
   };
 
   return (
