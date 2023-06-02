@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* ==================CONTENT================= */
+.content {
+  padding-top: 92px;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-top: 160px;
+  }
+}
+
+
+/* ==================PAGINATION================== */
+.paginate li.active {
+    color: #ffffff;
+    font-weight: 500;
+    border-color: white;
+    background-color: #450a0a;
+  }
+  .paginate button:disabled{
+    color: #ffffff;
+    background:gray;
+  }
+  
