@@ -1,6 +1,6 @@
 # NewsApp
 
-This News website was fully designed and implement by me under 36 hours.
+This News website was fully designed and implement by me.
 {Company name and logo included}
 
 ## To View
